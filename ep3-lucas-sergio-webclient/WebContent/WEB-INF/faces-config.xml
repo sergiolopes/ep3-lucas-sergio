@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+	<managed-bean>
+		<managed-bean-name>customerHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.customer.CustomerHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+
+	<managed-bean>
+		<managed-bean-name>customerSearchHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.customer.CustomerSearchHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>movieHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.movie.MovieHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+	<managed-bean>
+		<managed-bean-name>movieSearchHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.movie.MovieSearchHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>movieCopyHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.moviecopy.MovieCopyHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	
+</faces-config>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ep3-lucas-sergioEAR">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module deploy-path="/" handle="module:/resource/ep3-lucas-sergio/ep3-lucas-sergio">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ep3-lucas-sergioClient.jar" deploy-path="/" handle="module:/resource/ep3-lucas-sergioClient/ep3-lucas-sergioClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+<dependent-module deploy-path="/" handle="module:/resource/ep3-lucas-sergio-webclient/ep3-lucas-sergio-webclient">
+<dependent-object></dependent-object>
+<dependency-type>uses</dependency-type>
+</dependent-module>
+    </wb-module>
+</project-modules>
