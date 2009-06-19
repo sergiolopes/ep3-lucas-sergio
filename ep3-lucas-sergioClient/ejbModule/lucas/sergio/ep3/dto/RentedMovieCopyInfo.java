@@ -4,10 +4,10 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class RentedMovieCopyInfo implements Serializable {
-
-	private static final long serialVersionUID = -2923083183675904347L;
+	private static final long serialVersionUID = 3808964802423379133L;
 
 	private long movieCopyId;
+	private String movieName;
 	private long customerId;
 	private String customerName;
 	private String customerPhone;
@@ -51,6 +51,14 @@ public class RentedMovieCopyInfo implements Serializable {
 
 	public long getCustomerId() {
 		return customerId;
+	}
+	
+	public String getMovieName() {
+		return movieName;
+	}
+
+	public void setMovieName(String movieName) {
+		this.movieName = movieName;
 	}
 
 }

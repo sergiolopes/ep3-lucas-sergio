@@ -33,5 +33,10 @@
 		<managed-bean-class>lucas.sergio.ep3.web.moviecopy.MovieCopyHandler</managed-bean-class>
 		<managed-bean-scope>request</managed-bean-scope>
 	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>rentHandler</managed-bean-name>
+		<managed-bean-class>lucas.sergio.ep3.web.rent.RentHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
 	
 </faces-config>

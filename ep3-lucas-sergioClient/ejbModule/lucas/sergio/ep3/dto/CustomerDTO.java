@@ -32,4 +32,9 @@ public class CustomerDTO implements Serializable {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
+	
+	@Override
+	public String toString() {
+		return "" + this.id + " - " + this.name;
+	}
 }
