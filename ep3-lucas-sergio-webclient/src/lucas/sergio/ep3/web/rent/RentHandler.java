@@ -42,5 +42,12 @@ public class RentHandler {
 		
 		this.rentedMovieCopy = new RentedMovieCopyInfo();
 	}
+	
+	public void returnMovieCopy(ActionEvent event) {
+		UIParameter param = (UIParameter) event.getComponent().findComponent("movieCopyInfo");
+		RentedMovieCopyInfo movieCopy = (RentedMovieCopyInfo) param.getValue();
+		
+		movieCopyBean.returnCopy(movieCopy);
+	}
 
 }

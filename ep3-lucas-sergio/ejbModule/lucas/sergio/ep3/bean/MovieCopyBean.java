@@ -73,7 +73,7 @@ public class MovieCopyBean implements MovieCopyBeanRemote {
 	public List<RentedMovieCopyInfo> getRentedMovieCopies() {
 		@SuppressWarnings("unchecked")
 		List<MovieCopy> copies = manager
-		     .createQuery("select m from MovieCopy m join fetch m.movie join fetch m.customer where m.rented = true")
+		     .createQuery("select m from MovieCopy m join fetch m.movie join fetch m.taker where m.rented = true")
 		     .getResultList();
 		
 		List<RentedMovieCopyInfo> rented = new ArrayList<RentedMovieCopyInfo>();
