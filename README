@@ -1,0 +1,30 @@
+Middleware 2009 - Professor Reverbel - EP3: Utilização de EJB3 e JPA
+-----------------------------------------------------------------------------
+
+Lucas Cavalcanti - NUSP 5450572
+Sergio Lopes - NUSP 4894670
+
+------------------------------------------------------------------------------
+GERACAO DA APLICACAO:
+configure a variavel de ambiente JBOSS_HOME para a sua pasta do JBoss.
+ant build => constroi o ear.
+ant deploy => implanta no servidor.
+ant undeploy => desimplanta do servidor.
+
+URL da aplicacao web
+http://localhost:8080/ep3-lucas-sergio-webclient/
+
+ESTRUTURA DE PASTAS:
+ep3-lucas-sergio/ - camada EJB3
+ep3-lucas-sergioClient/ - interfaces remotas e DTOs
+ep3-lucas-sergiowebclient/ - camada web com JSF
+ep3-lucas-sergioEAR/ - descritor de implantacao (application.xml)
+
+ORGANIZACAO DAS CLASSES:
+lucas.sergio.ep3.bean.* - interfaces remotas e implementacoes dos EJBs
+lucas.sergio.ep3.model.* - entidades do JPA
+lucas.sergio.ep3.dto.* - DTOs
+lucas.sergio.ep3.web.* - handlers do JSF
+
+o EP foi testado no JBoss 5.1.0 GA.
+

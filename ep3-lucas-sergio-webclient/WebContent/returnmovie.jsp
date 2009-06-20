@@ -37,6 +37,14 @@
 				<h:outputText value="#{movieCopyInfo.customerName}"/>
 			</h:column>
 			<h:column>
+				<f:facet name="header">
+					<h:outputText value="Data de entrega"/>
+				</f:facet>
+				<h:outputText value="#{movieCopyInfo.returnDate}">
+					<f:convertDateTime pattern="dd/MM/yyyy"/>
+				</h:outputText>
+			</h:column>
+			<h:column>
 				<h:commandButton value="Devolver" actionListener="#{rentHandler.returnMovieCopy}">
 					<f:param id="movieCopyInfo" value="#{movieCopyInfo}"/>
 				</h:commandButton>

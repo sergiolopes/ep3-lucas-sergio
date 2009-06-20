@@ -4,8 +4,8 @@
 	<comment></comment>
 	<projects>
 		<project>ep3-lucas-sergio</project>
-		<project>ep3-lucas-sergioClient</project>
 		<project>ep3-lucas-sergio-webclient</project>
+		<project>ep3-lucas-sergioClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

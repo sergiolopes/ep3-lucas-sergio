@@ -6,12 +6,12 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="ep3-lucas-sergioClient.jar" deploy-path="/" handle="module:/resource/ep3-lucas-sergioClient/ep3-lucas-sergioClient">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-<dependent-module deploy-path="/" handle="module:/resource/ep3-lucas-sergio-webclient/ep3-lucas-sergio-webclient">
-<dependent-object></dependent-object>
+        <dependent-module deploy-path="/" handle="module:/resource/ep3-lucas-sergio-webclient/ep3-lucas-sergio-webclient">
+<dependent-object/>
 <dependency-type>uses</dependency-type>
 </dependent-module>
+        <dependent-module archiveName="ep3-lucas-sergioClient.jar" deploy-path="/lib" handle="module:/resource/ep3-lucas-sergioClient/ep3-lucas-sergioClient">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
     </wb-module>
 </project-modules>

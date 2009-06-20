@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Jun 19, 2009 8:39:02 PM                                                        
+
+     ep3-lucas-sergio    
+     Middleware
+                   
+     Lucas Cavalcanti dos Santos
+     Sergio Lopes                                                                
+     ====================================================================== -->
+<project name="ep3-lucas-sergio" default="build">
+    <description>
+            Middleware
+    </description>
+
+	<property name="project.name" value="ep3-lucas-sergio"/>
+
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="build" depends="clean, build-subprojects">
+    	<ear destfile="${project.name}.ear" appxml="ep3-lucas-sergioEAR/EarContent/META-INF">
+        	<fileset dir=".">
+			    <include name="**/ep3-lucas-sergio*.jar"/>
+			    <include name="**/ep3-lucas-sergio*.war"/>
+			</fileset>
+    	</ear>
+    </target>
+	
+	<!-- ================================= 
+          target: clean              
+         ================================= -->
+    <target name="clean">
+        <delete file="${project.name}.ear"/>
+    </target>
+	<target name="build-subprojects">
+        <ant antfile="ep3-lucas-sergioClient/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="ep3-lucas-sergio/build.xml" inheritAll="false" target="jar"/>
+        <ant antfile="ep3-lucas-sergio-webclient/build.xml" inheritAll="false" target="war"/>
+    </target>
+
+</project>

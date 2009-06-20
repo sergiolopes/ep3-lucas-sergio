@@ -3,7 +3,6 @@
 	<name>ep3-lucas-sergio</name>
 	<comment></comment>
 	<projects>
-		<project>ep3-lucas-sergioClient</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
